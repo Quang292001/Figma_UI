@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="137dp"
+       android:layout_height="44dp"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="52dp"
+       android:text="@string/strike"
+       android:textSize="16sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+   <ImageView
+       android:id="@+id/imageView_SPChinh"
+       android:layout_width="220dp"
+       android:layout_height="232dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/vs_xanh" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="36dp"
+       android:text="Điện Thoại Vsmart Joy 3 - Hàng chính hãng"
+       android:textColor="#000000"
+       android:textSize="16sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/imageView_SPChinh" />
+
+   <RatingBar
+       android:id="@+id/ratingBar"
+       style="?android:attr/ratingBarStyleIndicator"
+       android:layout_width="177dp"
+       android:layout_height="46dp"
+       android:layout_marginTop="16dp"
+       android:numStars="5"
+       android:rating="5"
+       android:scaleX="0.8"
+       android:scaleY="0.8"
+       android:theme="@style/RatingBar"
+       app:layout_constraintEnd_toStartOf="@+id/textView2"
+       app:layout_constraintHorizontal_bias="0.454"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView"
+       tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="48dp"
+       android:text="(Xem 828 đánh giá)"
+       android:textColor="#000000"
+       android:textSize="16sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="141dp"
+       android:layout_height="33dp"
+       android:layout_marginStart="52dp"
+       android:layout_marginTop="12dp"
+       android:text="1.790.000 đ"
+       android:textColor="#000000"
+       android:textSize="24sp"
+       app:layout_constraintEnd_toStartOf="@+id/textView4"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+   <TextView
+       android:id="@+id/textView5"
+       android:layout_width="222dp"
+       android:layout_height="23dp"
+       android:layout_marginTop="16dp"
+       android:text="Ở ĐÂU RẺ HƠN HOÀN TIỀN"
+       android:textColor="#FA0000"
+       android:textSize="14sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.148"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+   <ImageButton
+       android:id="@+id/imageButton"
+       android:layout_width="24dp"
+       android:layout_height="27dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginEnd="108dp"
+       android:background="@drawable/gp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView4"
+       app:srcCompat="@drawable/gp" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btn_chonMau"
+       android:layout_width="367dp"
+       android:layout_height="42dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/custom_chonmau"
+       android:backgroundTint="@null"
+       android:drawableRight="@drawable/vector"
+       android:paddingRight="15dp"
+       android:text="4 MÀU-CHỌN MÀU"
+       android:textColor="#000000"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.477"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btn_chonMua"
+       android:layout_width="341dp"
+       android:layout_height="53dp"
+       android:layout_marginTop="44dp"
+       android:background="@drawable/custom_chonmau"
+       android:backgroundTint="@color/red"
+       android:text="CHỌN MUA"
+       android:textColor="#FFFFFF"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/btn_chonMau"
+       app:layout_constraintVertical_bias="0.014" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
